@@ -1,0 +1,17 @@
+{
+  "name": "desafio-automacao-cypress",
+  "version": "1.0.0",
+  "private": true,
+  "description": "POC de automacao de API e interface com Cypress e TypeScript",
+  "scripts": {
+    "test": "cypress run",
+    "test:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.ts\"",
+    "test:ui": "cypress run --spec \"cypress/e2e/ui/**/*.cy.ts\"",
+    "test:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "cypress-plugin-api": "2.11.2",
+    "typescript": "^5.7.3"
+  }
+}
